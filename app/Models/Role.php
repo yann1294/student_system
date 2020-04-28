@@ -17,7 +17,9 @@ class Role extends Model
     use SoftDeletes;
 
     public $table = 'roles';
-    
+
+    protected $primaryKey = 'role_id';
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
@@ -49,5 +51,5 @@ class Role extends Model
         'name' => 'required'
     ];
 
-    
+
 }
