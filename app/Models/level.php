@@ -19,12 +19,13 @@ class level extends Model
     use SoftDeletes;
 
     public $table = 'levels';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
 
     protected $dates = ['deleted_at'];
+    protected $primaryKey = 'level_id';
 
 
 
@@ -57,5 +58,5 @@ class level extends Model
         'level_description' => 'required'
     ];
 
-    
+
 }

@@ -22,6 +22,8 @@ class levelRepository extends BaseRepository
         'level_description'
     ];
 
+    protected $primaryKey = 'level_id';
+
     /**
      * Return searchable fields
      *
