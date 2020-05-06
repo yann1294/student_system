@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Batch
  * @package App\Models
- * @version April 28, 2020, 9:17 am UTC
+ * @version May 6, 2020, 12:35 pm UTC
  *
  * @property string $batch
  */
@@ -17,13 +17,13 @@ class Batch extends Model
     use SoftDeletes;
 
     public $table = 'batches';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
 
     protected $dates = ['deleted_at'];
-
+    protected $primaryKey = 'batch_id';
 
 
     public $fillable = [
@@ -49,5 +49,5 @@ class Batch extends Model
         'batch' => 'required'
     ];
 
-    
+
 }

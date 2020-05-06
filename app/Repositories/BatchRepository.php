@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class BatchRepository
  * @package App\Repositories
- * @version April 28, 2020, 9:17 am UTC
+ * @version May 6, 2020, 12:35 pm UTC
 */
 
 class BatchRepository extends BaseRepository
@@ -19,7 +19,7 @@ class BatchRepository extends BaseRepository
     protected $fieldSearchable = [
         'batch'
     ];
-
+    protected $primaryKey = 'batch_id';
     /**
      * Return searchable fields
      *

@@ -1,3 +1,19 @@
+<style>
+    input:read-only{
+        background-color: green;
+        border: none;
+        border-color: transparent;
+    }
+
+    input:-moz-read-only{
+        background-color: green;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 4px;
+        color: white;
+        text-align: center;
+    }
+</style>
 <div class="table-responsive">
     <table class="table" id="levels-table">
         <thead>
