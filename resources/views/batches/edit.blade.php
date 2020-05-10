@@ -11,7 +11,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($batch, ['route' => ['batches.update', $batch->id], 'method' => 'patch']) !!}
+                   {!! Form::model($batch, ['route' => ['batches.update', $batch->batch_id], 'method' => 'patch']) !!}
 
                         @include('batches.fields')
 
