@@ -12,7 +12,7 @@
 <!-- Batch Field -->
 <div class="form-group col-sm-12">
     <span class="input-group-addon">Batch Year</span>
-    {!! Form::text('year', null, ['class' => 'form-control']) !!}
+    {!! Form::number('year', null, ['class' => 'form-control']) !!}
 </div>
 
             </div>

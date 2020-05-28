@@ -20,7 +20,7 @@ class classroom extends Model
     use SoftDeletes;
 
     public $table = 'classrooms';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
@@ -36,6 +36,7 @@ class classroom extends Model
         'classroom_status'
     ];
 
+    protected $primaryKey = 'classroom_id';
     /**
      * The attributes that should be casted to native types.
      *
@@ -61,5 +62,5 @@ class classroom extends Model
         'classroom_status' => 'required'
     ];
 
-    
+
 }

@@ -15,12 +15,14 @@
         <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('batches.table')
+
                 {!! Form::open(['route' => 'batches.store']) !!}
 
                 @include('batches.fields')
 
                 {!! Form::close() !!}
+                    @include('batches.table')
+
             </div>
         </div>
         <div class="text-center">
